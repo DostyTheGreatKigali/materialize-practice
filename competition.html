@@ -12,7 +12,7 @@
     <title>Materialize Practice | Competition</title>
 </head>
 <body>
-      <nav class="nav___padding">
+      <nav class="nav_padding">
         <div class="nav-wrapper">
           <a href="#!" class="brand-logo">Logo</a>
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -83,7 +83,8 @@
                   </div>
 
                   <div class="vote_button_container">
-                    <button>Vote</button>
+                    <button class="button_red">Vote</button>
+                    
                   </div>
                   
                 </div>
@@ -116,25 +117,33 @@
             </ul>
             <div id="votes_tally" class="col s12">
                 <div class="col s12">
-                  <div class="card horizontal hoverable card_content_flex">
-                  <div class="card-image" style="padding: 1em;" id="contestant_image_container">
-                    <img src="images/500x300_image_1.png">
-                  </div>
-                  <div class="card-stacked">
-                    <div class="card-content">
-                      <div class="name_location_container">
-                        <h4 class="flow-text">Contestant Name Contestant Name Contestant Name Contestant Name</h4>
-                        <p>Contestant Location</p>
+                  <div class="card horizontal hoverable votes_card_content_flex">
+                    <div class="card-image" style="padding: 1em;" id="vote_contestant_image_container">
+                      <img src="images/500x300_image_1.png" id="vote_tally_main_image_in_use">
+                      <!-- <img src="images/CONTESTANT.png" id="another_same_image"> -->
+                    </div>
+                    <div id="vote_tally_smallest_screen_image">
+                      <img src="images/500x300_image_1.png" id="vote_tally_another_same_image" >
+                    </div>
+                    
+                    <div class="card-stacked">
+                      <div class="card-content">
+                        <div class="vote_name_location_container">
+                          <h4 class="flow-text">Abena Adutwumwaa Anyinamkanea Abrokwa</h4>
+                          <p>Asante Akyem Agogo</p>
+                        </div>
                       </div>
                     </div>
-                    <!-- <div class="card-action">
-                      <a href="#">This is a link</a>
-                    </div> -->
+  
+                    <div class="vote_button_stats_container">
+                      <div>
+                        <h5 class="flow-text">This Week: 10</h5>
+                        <h5 class="flow-text">Total: 10</h5>
+                      </div>
+                      <button class="vote_button_red">Vote Again</button>
+                    </div>
+                    
                   </div>
-                  <div class="vote_button_container">
-                    <button>Vote</button>
-                  </div>
-                </div>
                   </div>
                 <div class="col s12">
                     <div class="card horizontal hoverable">
@@ -154,21 +163,40 @@
                   </div>
             </div>
             <div id="my_votes" class="col s12">
-                <div class="col s12">
-                    <div class="card horizontal hoverable">
-                      <div class="card-image">
-                        <img src="images/500x300_image_1.png">
-                      </div>
-                      <div class="card-stacked">
-                        <div class="card-content">
-                          <h5>Contestant Name</h5>
-                          <h6>Contestant Location</h6>
+                <div class="col s12" style="margin-bottom: 1.2em;">
+                  <div class="card horizontal hoverable votes_card_content_flex">
+                    <div class="card-image" style="padding: 1em;" id="vote_contestant_image_container">
+                      <img src="images/500x300_image_1.png" id="vote_tally_main_image_in_use">
+                      <!-- <img src="images/CONTESTANT.png" id="another_same_image"> -->
+                    </div>
+                    <div id="vote_tally_smallest_screen_image">
+                      <img src="images/500x300_image_1.png" id="vote_tally_another_same_image" >
+                    </div>
+                    
+                    <div class="card-stacked">
+                      <div class="card-content">
+                        <div class="vote_name_location_container">
+                          <h4 class="flow-text">Abena Adutwumwaa Anyinamkanea Abrokwa</h4>
+                          <p>Asante Akyem Agogo</p>
                         </div>
-                        <!-- <div class="card-action">
-                          <a href="#">This is a link</a>
-                        </div> -->
                       </div>
                     </div>
+  
+                    <div class="vote_button_stats_container">
+                      <div>
+                        <h5 class="flow-text">This Week: 10</h5>
+                        <h5 class="flow-text">Total: 10</h5>
+                      </div>
+                      <button class="vote_button_red">Vote Again</button>
+                    </div>
+                    
+                  </div>
+                  
+                  <div class="vote_for_another_container">
+                    <p class="flow-text" style="color: #e20000; margin-bottom: 0;"><span style="font-weight: bolder; color: #e20000;">Note: </span>This is the total number of votes you have contributed to this contestant in this competition.</p>
+                    <!-- <button>Button</button> -->
+                    <a class="waves-effect waves-light btn button_green" style="margin-top: 0;">Vote for Another Contestant</a>
+                  </div>
                   </div>
                 <div class="col s12">
                     <div class="card horizontal hoverable">
@@ -187,17 +215,26 @@
                     </div>
                   </div>
             </div>
-            <div id="my_transactions" class="col s12 green" >My Transactions
+            <div id="my_transactions" class="col s12">
+              <div class="container center-align">
+                <h5 style="color: #e20000; text-decoration: underline;"><a style="color: #e20000;" href="javascript:void(0)"> Your Transactions</a></h5>
+                <h6 class="flow-text"><a class="transaction_status" href="">Successful</a></h6>
+                <h6 class="flow-text"><a class="transaction_status" href="">Pending</a></h6>
+                <h6 class="flow-text"><a class="transaction_status" href="">Failed</a></h6>
+                <!-- <p>Hello</p>
+                <p>Hello</p> -->
+              </div>
             </div>
           </div>
 
           <!-- GALLERY TAB -->
-          <div id="gallery" class="col s12 black">Gallery
+          <div id="gallery" class="col s12">
             <ul id="tabs-swipe-demo" class="tabs">
                 <li class="tab col s3"><a class="active" href="#pictures">Pictures</a></li>
                 <li class="tab col s3"><a href="#videos">Videos</a></li>
             </ul>
-            <div id="pictures" class="col s12 red">Pictures
+            <div id="pictures" class="col s12">
+              
             </div>
             <div id="videos" class="col s12 yellow">Videos
             </div>

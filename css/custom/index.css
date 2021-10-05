@@ -132,6 +132,7 @@
 .transaction_status {
   text-decoration: underline;
   color: #141414;
+  text-transform: uppercase;
 }
 /* MY TRANSACTIONS END */
 

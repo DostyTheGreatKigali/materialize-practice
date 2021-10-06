@@ -33,17 +33,18 @@
       </ul>
 
       <section>
-          <div class="carousel carousel-slider">
-            <a class="carousel-item" href="#one!"><img src="images/rsz_slider-1.png" alt="Slider Image 1" class="responsive-img"></a>
-            <a class="carousel-item" href="#two!"><img src="images/rsz_slider-2.png" alt="Slider Image 2" class="responsive-img"></a>
-            <a class="carousel-item" href="#three!"><img src="images/rsz_slider-3.png" alt="Slider Image 3" class="responsive-img"></a>
-            <!-- <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/800/400/food/4"></a> -->
-          </div>
+        <div class="carousel carousel-slider" id="demo-carousel-auto">
+          <a class="carousel-item" href="#one!"><img src="images/rsz_slider-1.png" alt="Slider Image 1" class="responsive-img"></a>
+          <a class="carousel-item" href="#two!"><img src="images/rsz_slider-2.png" alt="Slider Image 2" class="responsive-img"></a>
+          <a class="carousel-item" href="#three!"><img src="images/rsz_slider-3.png" alt="Slider Image 3" class="responsive-img"></a>
+          <!-- <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/800/400/food/4"></a> -->
+        </div>
       </section>
 
        <!-- SINGLE EVENT -->
       <section style="margin-top: 2em;">
         <h1 class="flow-text center-align">Event Name</h1>
+        <!-- Tabs Main container Starts -->
        <div class="container">
         <ul id="tabs-swipe-demo" class="tabs" style="display: flex; flex-direction: row; justify-content: space-between;">
             <li class="tab col s3"><a class="active" href="#contestants">Contestants</a></li>
@@ -61,6 +62,7 @@
             <!-- <li class="tab col s3"><a href="#test-swipe-4">Test 3</a></li> -->
           </ul>
 
+          <div class="sub_tabs_main_container">
           <!-- CONTESTANTS TAB -->
           <div id="contestants" class="col s12">
             <div class="col s12">
@@ -300,22 +302,20 @@
               </div>
             </div>
             </div>
-            </div>
-
-          <!-- ABOUT TAB -->
-          <div id="about_event_organizers" class="col s12">
-             <div class="container">
+              <!-- ABOUT TAB -->
+            <div id="about_event_organizers" class="col s12">
+              <div class="container">
               <h6>This event is special</h6>
               <h5 class="flow-text uppercase_bold" style="margin-bottom: 0;">Organizer:</h5>
               <h5 class="flow-text uppercase_bold" style="margin-top: 0;">The Brainites Generation Foundation</h5>
               <hr style="color:#e20000; font-weight: lighter;">
               <h5 class="flow-text uppercase_bold">Competition Ends:</h5>
               <h5 class="flow-text uppercase_bold">Date Here</h5>
-             </div>
+              </div>
+              </div> <!-- Tabs Sub Main container Ends -->
           </div>
+         </div> <!-- Tabs Main container Ends -->
 
-
-          
           <!-- <div id="test-swipe-1" class="col s12 blue">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </div>
@@ -328,7 +328,8 @@
           <div id="test-swipe-4" class="col s12 yellow">
             At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
           </div> -->
-       </div>
+       <!-- </div> -->
+       
                  
       </section>
 
@@ -430,10 +431,20 @@
     $(document).ready(function(){
     $('.sidenav').sidenav();
     // $('.carousel').carousel();
-    $('.carousel.carousel-slider').carousel({
-    fullWidth: true,
-    indicators: true
+    // $('.carousel.carousel-slider').carousel({
+    // fullWidth: true,
+    // indicators: true
+    // });
+    $('#demo-carousel-auto').carousel({
+      fullWidth: true,
+      indicators: true
     });
+    
+    setInterval(function() {
+
+      $('#demo-carousel-auto').carousel('next');
+
+    }, 5000);
     $('.tabs').tabs();
     $('.modal').modal();
   });

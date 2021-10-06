@@ -7,7 +7,7 @@
 }
 
 /* EVENT START */
-.event_name, .organizer_name {
+.event_name {
     color: #141414;
     text-transform: uppercase;
 }
@@ -17,6 +17,25 @@
 /* EVENT END */
 
 /* ORGANIZER  */
+.organizer_name {
+    color: #e20000;
+    text-transform: uppercase;
+}
+
+/* TABS START */
+.sub_tabs_main_container {
+    z-index: 2; 
+    box-shadow: 2px 2px 2px 2px #969696; 
+    -webkit-box-shadow: 2px 2px 2px 2px #969696; 
+    background-color: #fff; 
+    padding-left: 0.8em; 
+    padding-right: 0.8em; 
+    padding-bottom: 1em;
+    padding-top: 1em; 
+    border-top-left-radius: 1.5em; 
+    border-top-right-radius: 1.5em;
+  }
+/* TABS END */
 
 /* CONTESTANT CARDS START */
 
@@ -403,6 +422,79 @@
          margin-right: 2em;
      }
 }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+/* TABS START */
+.sub_tabs_main_container {
+    z-index: 2; 
+    box-shadow: 2px 2px 2px 2px #969696; 
+    -webkit-box-shadow: 2px 2px 2px 2px #969696; 
+    background-color: #fff; 
+    padding-left: 0.8em; 
+    padding-right: 0.8em; 
+    padding-bottom: 1em;
+    padding-top: 1em; 
+    border-top-left-radius: 1.5em; 
+    border-top-right-radius: 1.5em;
+  }
+/* TABS END */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+/* TABS START */
+.sub_tabs_main_container {
+    z-index: 2; 
+    box-shadow: 2px 2px 2px 2px #969696; 
+    -webkit-box-shadow: 2px 2px 2px 2px #969696; 
+    background-color: #fff; 
+    padding-left: 0.8em; 
+    padding-right: 0.8em; 
+    padding-bottom: 1em;
+    padding-top: 1em; 
+    border-top-left-radius: 1.5em; 
+    border-top-right-radius: 1.5em;
+  }
+/* TABS END */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+/* TABS START */
+.sub_tabs_main_container {
+    z-index: 2; 
+    box-shadow: 2px 2px 2px 2px #969696; 
+    -webkit-box-shadow: 2px 2px 2px 2px #969696; 
+    background-color: #fff; 
+    padding-left: 1em; 
+    padding-right: 1em; 
+    padding-bottom: 1em;
+    padding-top: 1em; 
+    border-top-left-radius: 1.5em; 
+    border-top-right-radius: 1.5em;
+  }
+/* TABS END */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+/* TABS START */
+.sub_tabs_main_container {
+    z-index: 2; 
+    box-shadow: 2px 2px 2px 2px #969696; 
+    -webkit-box-shadow: 2px 2px 2px 2px #969696; 
+    background-color: #fff; 
+    padding-left: 2em; 
+    padding-right: 2em; 
+    padding-bottom: 2em;
+    padding-top: 2em; 
+    border-top-left-radius: 1.5em; 
+    border-top-right-radius: 1.5em;
+  }
+/* TABS END */
+}
+
 /* MEDIA QUERIES END */
 
 

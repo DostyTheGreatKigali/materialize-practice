@@ -43,6 +43,15 @@
     width: 30%
 }
 
+.contestant_name, .contestant_location {
+    color: #141414;
+    text-transform: uppercase;
+}
+.contestant_name:hover, .contestant_location:hover {
+    color: #e20000;
+    /* text-transform: uppercase; */
+}
+
 #smallest_screen_image {
     /* background-color: hotpink; */
     display: none;
@@ -90,6 +99,11 @@
     justify-content: center;
     /* background-color: yellow; */
     width: 40%;
+}
+
+.vote_contestant_name, .vote_contestant_location {
+    color: #141414;
+    text-transform: uppercase;
 }
 
 #vote_tally_smallest_screen_image {
@@ -144,6 +158,11 @@
 .transaction_status {
   text-decoration: underline;
   color: #141414;
+  text-transform: uppercase;
+}
+.transaction_status:hover {
+  text-decoration: underline;
+  color: #e20000;
   text-transform: uppercase;
 }
 /* MY TRANSACTIONS END */

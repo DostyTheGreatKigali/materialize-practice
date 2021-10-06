@@ -117,7 +117,7 @@
     /* align-items: center; */
     justify-content: center;
     /* background-color: yellow; */
-    width: 40%;
+    width: 45%;
 }
 
 .vote_contestant_name, .vote_contestant_location {
@@ -144,7 +144,7 @@
     /* align-items: flex-start; */
     /* margin-right: 2em; */
     /* background-color: green; */
-    width: 30%;
+    width: 25%;
     padding-left: 0.5em;
     padding-right: 0.5em;
 

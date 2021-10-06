@@ -6,6 +6,18 @@
     padding-right: 2em;
 }
 
+/* EVENT START */
+.event_name, .organizer_name {
+    color: #141414;
+    text-transform: uppercase;
+}
+.event_name:hover {
+    color: #e20000;
+}
+/* EVENT END */
+
+/* ORGANIZER  */
+
 /* CONTESTANT CARDS START */
 
 .card_content_flex {

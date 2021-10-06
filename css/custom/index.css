@@ -9,7 +9,8 @@
 /* EVENT START */
 .event_name {
     color: #141414;
-    text-transform: uppercase;
+    text-transform: capitalize;
+    /* text-transform: uppercase; */
 }
 .event_name:hover {
     color: #e20000;
